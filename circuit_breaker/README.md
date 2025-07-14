@@ -2,7 +2,7 @@
 ## Project Explanation
 
 This project demonstrates the [circuit breaker](https://learn.microsoft.com/en-us/previous-versions/msp-n-p/dn589784(v=pandp.10)) pattern using the
-[gobreaker](https://github.com/sony/gobreaker) library. It simulates server responses and a client that interacts with the server through a circuit breaker.
+[gobreaker](https://github.com/sony/gobreaker) library. It simulates the interaction between a client and server mediated by a circuit breaker.
 
 ### Key Components:
 - **server()**: Simulated with predefined `200 OK` (success) and `500 Internal Server Error` (failure) responses.
