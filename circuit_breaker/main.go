@@ -48,7 +48,7 @@ func server(call_id int) (int, error) {
 
 // Client function using circuit breaker to call server
 func client(cb *gobreaker.CircuitBreaker) {
-	for i := 0; i < 15; i++ { // Simulating 10 calls to the server
+	for i := 0; i < 15; i++ {
 		fmt.Printf("Making client call %d (breaker state: %s)\n", i+1, cb.State().String())
 
 		result, err := cb.Execute(func() (interface{}, error) {
